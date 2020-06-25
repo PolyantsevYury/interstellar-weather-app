@@ -48,6 +48,8 @@ export const WeatherBlock = styled.main`
     max-width: 1000px;
     border-radius: 14px;
     border: 1px solid #1E1E1E;
+    display: flex;
+    flex-direction: column;
     
     .weather-title {
         font-size: var(--fs-h1);

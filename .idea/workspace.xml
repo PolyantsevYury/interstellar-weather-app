@@ -16,17 +16,14 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1de50740-1616-4768-97b6-f7c2e1f52600" name="Default Changelist" comment="Basic structure of layout">
-      <change afterPath="$PROJECT_DIR$/src/components/Previous.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Previous.styles.js" afterDir="false" />
+    <list default="true" id="1de50740-1616-4768-97b6-f7c2e1f52600" name="Default Changelist" comment="Add scrollable Previous days&#10;install and configure ant design&#10;change some styles">
+      <change afterPath="$PROJECT_DIR$/src/components/Unit.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Unit.styles.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/helpers.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.styles.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.styles.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/WeatherData.styles.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/WeatherData.styles.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/WeatherData.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/WeatherData.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,7 +54,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/img" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -69,12 +66,14 @@
     <property name="ts.external.directory.path" value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/img" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src" />
       <recent name="$PROJECT_DIR$" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src" />
+      <recent name="$PROJECT_DIR$/src/components" />
+      <recent name="$PROJECT_DIR$/src/img" />
     </key>
   </component>
   <component name="SvnConfiguration">
@@ -88,7 +87,7 @@
       <option name="presentableId" value="Default" />
       <updated>1592946977507</updated>
       <workItem from="1592946978782" duration="693000" />
-      <workItem from="1593049484251" duration="16154000" />
+      <workItem from="1593049484251" duration="18390000" />
     </task>
     <task id="LOCAL-00001" summary="Basic structure of layout">
       <created>1593028442226</created>
@@ -97,7 +96,14 @@
       <option name="project" value="LOCAL" />
       <updated>1593028442226</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Add scrollable Previous days&#10;install and configure ant design&#10;change some styles">
+      <created>1593112546297</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1593112546297</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -130,7 +136,8 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Basic structure of layout" />
-    <option name="LAST_COMMIT_MESSAGE" value="Basic structure of layout" />
+    <MESSAGE value="Add scrollable Previous days&#10;install and configure ant design&#10;change some styles" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add scrollable Previous days&#10;install and configure ant design&#10;change some styles" />
   </component>
   <component name="WindowStateProjectService">
     <state x="370" y="209" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1593043052902">

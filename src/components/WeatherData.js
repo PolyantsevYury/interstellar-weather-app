@@ -1,19 +1,20 @@
 import React from 'react';
 import {Wrapper} from "./WeatherData.styles";
+import { formatTemperature } from '../helpers';
 
-const WeatherData = ({ sol, isMetric }) => (
+const WeatherData = ({ isMetric }) => (
     <Wrapper>
         <div>
             <h2>Temp</h2>
             <p>
                 High:
-                <span> -2° </span>
-                <span> C </span>
+                <span> {formatTemperature(-2, isMetric)} </span>°
+                <span> {isMetric ? ' C' : ' F'} </span>
             </p>
             <p>
                 Low:
-                <span> -100° </span>
-                <span> C </span>
+                <span> {formatTemperature(-100, isMetric)}</span>°
+                <span> {isMetric ? ' C' : ' F'} </span>
             </p>
         </div>
 
