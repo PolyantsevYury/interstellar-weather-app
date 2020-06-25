@@ -1,32 +1,60 @@
 import styled, {createGlobalStyle} from 'styled-components';
 
 export const GlobalStyle = createGlobalStyle`
-  * {
-    box-sizing: border-box;
-  }
+    * {
+        box-sizing: border-box;
+    }
+      
+    :root {
+        --fw-light: 300;
+        --fw-normal: 400;
+        --fw-semi: 500;
+        --fw-bold: 700;
+        --fs-h1: 1.5rem;
+        --fs-h2: 2.25rem;
+        --fs-body: 1rem;
+        --fs-xl: 4.5rem;
+    }
   
-  body {
-    margin: 0;
-    font-family: 'Montserrat', sans-serif;
-    line-height: 1.6;
-    background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(${props => props.bgImage});
-    background-size: cover;
-    height: 100vh;
-  }
+    body {
+        background: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url(${props => props.bgImage});
+        background-size: cover;
+        height: 100vh;
+        font-size: 1rem;
+    }
+    
+    h1, h2, h3, h4 {
+        line-height: 1;
+        color: #F4F4F4;
+    }
 `;
 
 export const AppWrapper = styled.div`
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 20px;
-  color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 60px 20px 20px 20px;
+    color: #F4F4F4;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.6;
 `;
 
 export const WeatherBlock = styled.main`
-  background: rgba(0, 0, 0, 0.7);
-  padding: 2em;
-  max-width: 1000px;
-  margin: 40px 0;
-  border-radius: 14px;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 2em;
+    width: 100%;
+    max-width: 1000px;
+    border-radius: 14px;
+    border: 1px solid #1E1E1E;
+    
+    .weather-title {
+        font-size: var(--fs-h1);
+        font-weight: var(--fw-light);
+        text-transform: uppercase;
+        color: #d06d6d;
+        letter-spacing: 2px;
+    }
+    
 `;
