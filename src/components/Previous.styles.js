@@ -48,6 +48,10 @@ export const PreviousDay = styled.div`
         position: relative;
         margin-top: 10px;
         
+        span {
+            color: #ADADAD;
+        }
+        
         :before {
             content: '';
             position: absolute;
@@ -69,6 +73,7 @@ export const PreviousDay = styled.div`
         
         :hover span {
             letter-spacing: 2px;
+            color: #fff;
         }
         
         :hover::before {

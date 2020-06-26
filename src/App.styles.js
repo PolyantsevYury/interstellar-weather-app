@@ -17,7 +17,7 @@ export const GlobalStyle = createGlobalStyle`
     }
   
     body {
-        background: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url(${props => props.bgImage});
+        background: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.5)), url(${props => props.bgImage});
         background-size: cover;
         height: 100vh;
         font-size: 1rem;
@@ -52,11 +52,32 @@ export const WeatherBlock = styled.main`
     flex-direction: column;
     
     .weather-title {
+        align-self: center;
         font-size: var(--fs-h1);
         font-weight: var(--fw-light);
-        text-transform: uppercase;
-        color: #d06d6d;
         letter-spacing: 2px;
+        color: #CDCDCD;
+        
+        span {
+            color: #d06d6d;
+            text-transform: uppercase;
+        }
+    }
+    
+    .weather-date {
+        display: flex;
+        justify-content: space-between;
+        
+        h2 {
+            margin: 0;
+        }
+        p {
+            font-size: 1.1rem;
+        }
+        span {
+            font-size: var(--fs-body);
+            color: #ADADAD;
+        }
     }
     
 `;

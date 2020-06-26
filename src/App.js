@@ -14,13 +14,20 @@ const App = () => {
         <AppWrapper>
             <WeatherBlock>
                 <h1 className='weather-title'>
-                    Latest weather at Elysium Plantitia
+                    Latest weather at <span>Elysium Plantitia</span>
                 </h1>
-                <h2>
-                    561 June 24
-                </h2>
+                <div className='weather-date'>
+                    <div>
+                        <h2>
+                            561 Sol<span> (day on Mars)</span>
+                        </h2>
+                        <p>June 24</p>
+                    </div>
+                    <div>
+                        <Unit isMetric={isMetric} setMetric={setMetric} />
+                    </div>
+                </div>
                 <WeatherData isMetric={isMetric} />
-                <Unit isMetric={isMetric} setMetric={setMetric} />
             </WeatherBlock>
             <Previous isMetric={isMetric} />
         </AppWrapper>

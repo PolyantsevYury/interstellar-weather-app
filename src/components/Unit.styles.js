@@ -1,7 +1,6 @@
 import styled from 'styled-components';
 
 export const UnitStyles = styled.div`
-  align-self: flex-end;
   color: #fff;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -22,6 +21,7 @@ export const Toggle = styled.button`
   padding: 0;
   border-radius: 100vmax;
   margin: 0 1em;
+  outline: 0;
 
   ::after {
     content: '';
