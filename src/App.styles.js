@@ -72,6 +72,7 @@ export const WeatherBlock = styled.main`
             margin: 0;
         }
         p {
+            color: #ADADAD;
             font-size: 1.1rem;
         }
         span {

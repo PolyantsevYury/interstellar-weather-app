@@ -22,7 +22,6 @@ export const WeatherItem = styled.div`
     
     .description {
         text-align: center;
-        margin-top: 10px;
         font-size: 1.1rem;
         color: #ADADAD;
     }

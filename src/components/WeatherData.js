@@ -5,19 +5,19 @@ import currentPhoto from '../img/context_camera.PNG'
 import {Popover} from "antd";
 import {InfoCircleFilled} from '@ant-design/icons';
 
-const WeatherData = ({ isMetric }) => (
+const WeatherData = ({ sol, isMetric }) => (
     <WeatherWrapper>
         <WeatherItem>
             <div className='weather-instance'>
                 <div className='weather-value'>
-                    {formatTemperature(-2, isMetric)}°
+                    {formatTemperature( sol.maxTemp, isMetric )}°
                     <span> {isMetric ? ' C' : ' F'} </span>
                 </div>
                 <div className='description'>High</div>
             </div>
             <div className='weather-instance'>
                 <div className='weather-value'>
-                    {formatTemperature(-100, isMetric)}°
+                    {formatTemperature( sol.minTemp, isMetric )}°
                     <span> {isMetric ? ' C' : ' F'} </span>
                 </div>
                 <div className='description'>Low</div>
@@ -26,7 +26,7 @@ const WeatherData = ({ isMetric }) => (
 
         <WeatherItem>
             <div className='weather-instance'>
-                <div className='weather-value'>5 kph</div>
+                <div className='weather-value'>{sol.windSpeed}</div>
                 <div className='description'>Wind</div>
             </div>
         </WeatherItem>

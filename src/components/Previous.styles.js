@@ -8,6 +8,7 @@ export const PreviousWrapper = styled.div`
     padding: 20px;
     
     .previous-title {
+        color: #CDCDCD;
         margin: 0 0 20px 40px;
     }
 `;
