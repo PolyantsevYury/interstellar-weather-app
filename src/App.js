@@ -7,6 +7,7 @@ import 'antd/dist/antd.css';
 import Unit from "./components/Unit";
 import { MARS_API_URL } from './api';
 import { formatDate } from './helpers';
+import {TogglePlanet} from "./components/TogglePlanet";
 
 const App = () => {
     const [loading, setLoading] = useState(true);
@@ -40,29 +41,32 @@ const App = () => {
         <>
             <GlobalStyle bgImage={BGImage}/>
             <AppWrapper>
-                <WeatherBlock>
-                    {loading ? (
-                        <div>Loading ...</div>
-                    ) : (
-                        <>
-                            <h1 className='weather-title'> Latest weather at
-                                <span className='weather-title__location'> Elysium Plantitia</span>
-                            </h1>
-                            <div className='weather-date'>
-                                <div>
-                                    <h2>
-                                        {weather[selectedSol].sol || 'sol'}<span> (day on Mars)</span>
-                                    </h2>
-                                    <p>{weather[selectedSol].date || 'date'}</p>
+                <div className='content-container'>
+                    <TogglePlanet/>
+                    <WeatherBlock>
+                        {loading ? (
+                            <div>Loading ...</div>
+                        ) : (
+                            <>
+                                <h1 className='weather-title'> Latest weather at
+                                    <span className='weather-title__location'> Elysium Plantitia</span>
+                                </h1>
+                                <div className='weather-date'>
+                                    <div>
+                                        <h2>
+                                            {weather[selectedSol].sol || 'sol'}<span> (day on Mars)</span>
+                                        </h2>
+                                        <p>{weather[selectedSol].date || 'date'}</p>
+                                    </div>
+                                    <div>
+                                        <Unit isMetric={isMetric} setMetric={setMetric}/>
+                                    </div>
                                 </div>
-                                <div>
-                                    <Unit isMetric={isMetric} setMetric={setMetric}/>
-                                </div>
-                            </div>
-                            <WeatherData sol={weather[selectedSol]} isMetric={isMetric}/>
-                        </>
-                    )}
-                </WeatherBlock>
+                                <WeatherData sol={weather[selectedSol]} isMetric={isMetric}/>
+                            </>
+                        )}
+                    </WeatherBlock>
+                </div>
                 <Previous weather={weather}
                           setSelectedSol={setSelectedSol}
                           isMetric={isMetric}

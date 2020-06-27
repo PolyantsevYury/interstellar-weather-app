@@ -4,7 +4,7 @@ export const PreviousWrapper = styled.div`
     width: 100%;
     
     .previous-title {
-        color: #CDCDCD;
+        color: #fff;
         margin: 20px 40px;
     }
 `;
