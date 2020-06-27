@@ -16,13 +16,10 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1de50740-1616-4768-97b6-f7c2e1f52600" name="Default Changelist" comment="Redesign main weather block, add responsive layout">
+    <list default="true" id="1de50740-1616-4768-97b6-f7c2e1f52600" name="Default Changelist" comment="Add valid Previous weather data,&#10;Fix validate wind speed">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.styles.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.styles.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Previous.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Previous.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/WeatherData.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/WeatherData.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/WeatherData.styles.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/WeatherData.styles.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -86,7 +83,7 @@
       <option name="presentableId" value="Default" />
       <updated>1592946977507</updated>
       <workItem from="1592946978782" duration="693000" />
-      <workItem from="1593049484251" duration="61922000" />
+      <workItem from="1593049484251" duration="63041000" />
     </task>
     <task id="LOCAL-00001" summary="Basic structure of layout">
       <created>1593028442226</created>
@@ -130,7 +127,14 @@
       <option name="project" value="LOCAL" />
       <updated>1593261853763</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Add valid Previous weather data,&#10;Fix validate wind speed">
+      <created>1593271426637</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1593271426637</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -168,7 +172,8 @@
     <MESSAGE value="made main weather block&#10;add dynamic metric in Previous block" />
     <MESSAGE value="add fetching Mars weather from NASA API" />
     <MESSAGE value="Redesign main weather block, add responsive layout" />
-    <option name="LAST_COMMIT_MESSAGE" value="Redesign main weather block, add responsive layout" />
+    <MESSAGE value="Add valid Previous weather data,&#10;Fix validate wind speed" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add valid Previous weather data,&#10;Fix validate wind speed" />
   </component>
   <component name="WindowStateProjectService">
     <state x="370" y="209" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1593043052902">

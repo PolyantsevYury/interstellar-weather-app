@@ -65,7 +65,9 @@ const App = () => {
                 </WeatherBlock>
                 <Previous weather={weather}
                           setSelectedSol={setSelectedSol}
-                          isMetric={isMetric}/>
+                          isMetric={isMetric}
+                          loading={loading}
+                />
             </AppWrapper>
         </>
     );
