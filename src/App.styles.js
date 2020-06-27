@@ -46,7 +46,7 @@ export const WeatherBlock = styled.main`
     background: rgba(0, 0, 0, 0.7);
     padding: 2em;
     width: 100%;
-    max-width: 1000px;
+    max-width: 960px;
     border-radius: 14px;
     border: 1px solid #1E1E1E;
     display: flex;
@@ -54,6 +54,7 @@ export const WeatherBlock = styled.main`
     
     .weather-title {
         align-self: center;
+        text-align: center;
         font-size: var(--fs-h1);
         font-weight: var(--fw-light);
         letter-spacing: 2px;

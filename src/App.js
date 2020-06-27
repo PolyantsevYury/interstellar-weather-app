@@ -18,13 +18,14 @@ const App = () => {
     useEffect(() => {
         const fetchFromAPI = async () => {
             const weather = await (await fetch(MARS_API_URL)).json();
-            const marsWeather = weather.sol_keys.map((solKey) => {
+            const marsWeather = weather.sol_keys.map((solKey, i) => {
                 return {
                     sol: solKey,
                     maxTemp: weather[solKey].AT?.mx || 'No data',
                     minTemp: weather[solKey].AT?.mn || 'No data',
-                    windSpeed: Math.round(weather[solKey].HWS?.av || 0),
+                    windSpeed: weather[solKey].HWS && weather[solKey].HWS.av ? Math.round(weather[solKey].HWS.av) : 'No data',
                     date: formatDate(new Date(weather[solKey].First_UTC)),
+                    itemNumber: i,
                 };
             });
             setWeather(marsWeather);
@@ -62,7 +63,9 @@ const App = () => {
                         </>
                     )}
                 </WeatherBlock>
-                <Previous isMetric={isMetric}/>
+                <Previous weather={weather}
+                          setSelectedSol={setSelectedSol}
+                          isMetric={isMetric}/>
             </AppWrapper>
         </>
     );

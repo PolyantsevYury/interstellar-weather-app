@@ -15,6 +15,7 @@ export const WeatherItem = styled.div`
     align-items: center;
     justify-content: center;
     margin: 20px 20px 0 20px;
+    width: 240px;
     
     .weather-instance-container {
         display: flex;

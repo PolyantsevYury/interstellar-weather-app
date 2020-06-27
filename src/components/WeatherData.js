@@ -11,21 +11,21 @@ const WeatherData = ({ sol, isMetric }) => (
             <div className='weather-instance-container'>
                 <div className='weather-instance'>
                     <div className='weather-value'>
-                        {formatTemperature( sol.maxTemp, isMetric )}°
-                        <span> {isMetric ? ' C' : ' F'} </span>
+                        {formatTemperature( sol.maxTemp, isMetric )}
+                        <span> {isMetric ? ' °C' : ' °F'} </span>
                     </div>
                     <div className='description'>High</div>
                 </div>
                 <div className='weather-instance'>
                     <div className='weather-value'>
-                        {formatTemperature( sol.minTemp, isMetric )}°
-                        <span> {isMetric ? ' C' : ' F'} </span>
+                        {formatTemperature( sol.minTemp, isMetric )}
+                        <span> {isMetric ? ' °C' : ' °F'} </span>
                     </div>
                     <div className='description'>Low</div>
                 </div>
             </div>
             <div className='weather-instance'>
-                <div className='weather-value'>{sol.windSpeed} mph</div>
+                <div className='weather-value'>{sol.windSpeed === 'No data' ? 'No data' : `${sol.windSpeed} mph`}</div>
                 <div className='description'>Wind</div>
             </div>
         </WeatherItem>
