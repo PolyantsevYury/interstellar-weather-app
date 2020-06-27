@@ -12,7 +12,7 @@ const App = () => {
     const [loading, setLoading] = useState(true);
     const [isMetric, setMetric] = useState(true);
     const [weather, setWeather] = useState([]);
-    const [selectedSol, setSelectedSol] = useState();
+    const [selectedSol, setSelectedSol] = useState(); // "Sol" is a Mars solar day
     console.log(weather);
 
     useEffect(() => {
@@ -44,8 +44,8 @@ const App = () => {
                         <div>Loading ...</div>
                     ) : (
                         <>
-                            <h1 className='weather-title'>
-                                Latest weather at <span>Elysium Plantitia</span>
+                            <h1 className='weather-title'> Latest weather at
+                                <span className='weather-title__location'> Elysium Plantitia</span>
                             </h1>
                             <div className='weather-date'>
                                 <div>

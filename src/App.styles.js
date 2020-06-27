@@ -19,7 +19,7 @@ export const GlobalStyle = createGlobalStyle`
     body {
         background: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.5)), url(${props => props.bgImage});
         background-size: cover;
-        height: 100vh;
+        background-attachment: fixed;
         font-size: 1rem;
     }
     
@@ -30,11 +30,12 @@ export const GlobalStyle = createGlobalStyle`
 `;
 
 export const AppWrapper = styled.div`
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    padding: 60px 20px 20px 20px;
+    justify-content: space-between;
+    padding: 60px 20px 4px 20px;
     color: #F4F4F4;
     margin: 0;
     font-family: 'Montserrat', sans-serif;
@@ -57,8 +58,9 @@ export const WeatherBlock = styled.main`
         font-weight: var(--fw-light);
         letter-spacing: 2px;
         color: #CDCDCD;
+        }
         
-        span {
+        .weather-title__location {
             color: #d06d6d;
             text-transform: uppercase;
         }
@@ -74,6 +76,7 @@ export const WeatherBlock = styled.main`
         p {
             color: #ADADAD;
             font-size: 1.1rem;
+            margin: 0;
         }
         span {
             font-size: var(--fs-body);

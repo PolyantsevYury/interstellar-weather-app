@@ -8,25 +8,24 @@ import {InfoCircleFilled} from '@ant-design/icons';
 const WeatherData = ({ sol, isMetric }) => (
     <WeatherWrapper>
         <WeatherItem>
-            <div className='weather-instance'>
-                <div className='weather-value'>
-                    {formatTemperature( sol.maxTemp, isMetric )}°
-                    <span> {isMetric ? ' C' : ' F'} </span>
+            <div className='weather-instance-container'>
+                <div className='weather-instance'>
+                    <div className='weather-value'>
+                        {formatTemperature( sol.maxTemp, isMetric )}°
+                        <span> {isMetric ? ' C' : ' F'} </span>
+                    </div>
+                    <div className='description'>High</div>
                 </div>
-                <div className='description'>High</div>
+                <div className='weather-instance'>
+                    <div className='weather-value'>
+                        {formatTemperature( sol.minTemp, isMetric )}°
+                        <span> {isMetric ? ' C' : ' F'} </span>
+                    </div>
+                    <div className='description'>Low</div>
+                </div>
             </div>
             <div className='weather-instance'>
-                <div className='weather-value'>
-                    {formatTemperature( sol.minTemp, isMetric )}°
-                    <span> {isMetric ? ' C' : ' F'} </span>
-                </div>
-                <div className='description'>Low</div>
-            </div>
-        </WeatherItem>
-
-        <WeatherItem>
-            <div className='weather-instance'>
-                <div className='weather-value'>{sol.windSpeed}</div>
+                <div className='weather-value'>{sol.windSpeed} mph</div>
                 <div className='description'>Wind</div>
             </div>
         </WeatherItem>

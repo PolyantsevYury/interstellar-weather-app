@@ -1,15 +1,11 @@
 import styled from 'styled-components';
 
 export const PreviousWrapper = styled.div`
-    position: fixed;
-    bottom: 0;
-    left: 0;
     width: 100%;
-    padding: 20px;
     
     .previous-title {
         color: #CDCDCD;
-        margin: 0 0 20px 40px;
+        margin: 20px 40px;
     }
 `;
 

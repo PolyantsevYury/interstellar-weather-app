@@ -16,15 +16,13 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1de50740-1616-4768-97b6-f7c2e1f52600" name="Default Changelist" comment="made main weather block&#10;add dynamic metric in Previous block">
-      <change afterPath="$PROJECT_DIR$/src/api.js" afterDir="false" />
+    <list default="true" id="1de50740-1616-4768-97b6-f7c2e1f52600" name="Default Changelist" comment="add fetching Mars weather from NASA API">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.styles.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.styles.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Previous.styles.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Previous.styles.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/WeatherData.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/WeatherData.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/WeatherData.styles.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/WeatherData.styles.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -88,7 +86,7 @@
       <option name="presentableId" value="Default" />
       <updated>1592946977507</updated>
       <workItem from="1592946978782" duration="693000" />
-      <workItem from="1593049484251" duration="41621000" />
+      <workItem from="1593049484251" duration="53842000" />
     </task>
     <task id="LOCAL-00001" summary="Basic structure of layout">
       <created>1593028442226</created>
@@ -118,7 +116,14 @@
       <option name="project" value="LOCAL" />
       <updated>1593142677063</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="add fetching Mars weather from NASA API">
+      <created>1593200979154</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1593200979154</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -154,7 +159,8 @@
     <MESSAGE value="Add scrollable Previous days&#10;install and configure ant design&#10;change some styles" />
     <MESSAGE value="add change metric option" />
     <MESSAGE value="made main weather block&#10;add dynamic metric in Previous block" />
-    <option name="LAST_COMMIT_MESSAGE" value="made main weather block&#10;add dynamic metric in Previous block" />
+    <MESSAGE value="add fetching Mars weather from NASA API" />
+    <option name="LAST_COMMIT_MESSAGE" value="add fetching Mars weather from NASA API" />
   </component>
   <component name="WindowStateProjectService">
     <state x="370" y="209" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1593043052902">
@@ -177,10 +183,10 @@
       <screen x="0" y="0" width="1280" height="800" />
     </state>
     <state x="149" y="39" key="SettingsEditor/0.0.1280.800@0.0.1280.800" timestamp="1593102032395" />
-    <state x="305" y="124" width="670" height="676" key="search.everywhere.popup" timestamp="1593093372567">
+    <state x="305" y="124" width="670" height="676" key="search.everywhere.popup" timestamp="1593259591486">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state x="305" y="124" width="670" height="676" key="search.everywhere.popup/0.0.1280.800@0.0.1280.800" timestamp="1593093372567" />
+    <state x="305" y="124" width="670" height="676" key="search.everywhere.popup/0.0.1280.800@0.0.1280.800" timestamp="1593259591486" />
     <state x="305" y="124" width="670" height="676" key="search.everywhere.popup/0.23.1280.709@0.23.1280.709" timestamp="1593087806611" />
   </component>
 </project>

@@ -2,15 +2,24 @@ import styled from 'styled-components';
 
 export const WeatherWrapper = styled.div`
     display: flex;
-    padding-bottom: 20px;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    .WeatherItem + WeatherItem {
+        border-left: 0.25em solid #613131;
+    }
 `;
 
 export const WeatherItem = styled.div`
-    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    margin: 20px 20px 0 20px;
+    
+    .weather-instance-container {
+        display: flex;
+        margin-bottom: 10px;
+    }
     
     .weather-instance {
         margin: 0 20px;
@@ -18,6 +27,7 @@ export const WeatherItem = styled.div`
     
     .weather-value {
         font-size: 1.7rem;
+        display: flex;
     }
     
     .description {
@@ -27,24 +37,13 @@ export const WeatherItem = styled.div`
     }
     
     :nth-child(1) {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: center;
     }
     
     :nth-child(2) {
-        --border: 0.25em solid #613131;
-        border-left: var(--border);
-        border-right: var(--border);
-        padding: 0 2em;
-    }
-    
-    :nth-child(3) {
         .current-photo {
-            width: 120px;
+            width: 160px;
             border: 1px solid #1E1E1E;
-            border-radius: 14px;
+            border-radius: 8px;
         }
         
         .description {
