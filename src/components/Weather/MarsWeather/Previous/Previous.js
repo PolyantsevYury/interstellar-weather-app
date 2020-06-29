@@ -3,7 +3,7 @@ import {PreviousDay, PreviousDays, PreviousWrapper} from "./Previous.styles";
 import {List, Card} from 'antd';
 import {formatTemperature} from "../../../../helpers";
 
-const Previous = ({
+export const Previous = ({
                     marsWeather,
                     setSelectedSol,
                     isMetric,
@@ -54,5 +54,3 @@ const Previous = ({
     </PreviousWrapper>
   )
 };
-
-export default Previous;

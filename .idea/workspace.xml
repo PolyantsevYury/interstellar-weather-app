@@ -17,10 +17,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1de50740-1616-4768-97b6-f7c2e1f52600" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/components/Weather/Weather.styles.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.styles.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.styles.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Weather/EarthWeather/EarthWeather.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Weather/EarthWeather/EarthWeather.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Weather/MarsWeather/MarsWeather.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Weather/MarsWeather/MarsWeather.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Weather/MarsWeather/Previous/Previous.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Weather/MarsWeather/Previous/Previous.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Weather/MarsWeather/Previous/Previous.styles.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Weather/MarsWeather/Previous/Previous.styles.js" afterDir="false" />
     </list>
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -75,18 +80,6 @@
       <recent name="$PROJECT_DIR$/src/components" />
       <recent name="$PROJECT_DIR$/src/img" />
     </key>
-  </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -195,12 +188,12 @@
                   </entry>
                 </map>
               </option>
-              <option name="COLUMN_ORDER" />
             </State>
           </value>
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
@@ -233,6 +226,10 @@
       <screen x="0" y="0" width="1280" height="800" />
     </state>
     <state x="294" y="185" key="EditFileWatcherDialog/0.0.1280.800@0.0.1280.800" timestamp="1593087647351" />
+    <state x="376" y="87" key="RollbackChangesDialog" timestamp="1593450534328">
+      <screen x="0" y="23" width="1280" height="709" />
+    </state>
+    <state x="376" y="87" key="RollbackChangesDialog/0.23.1280.709@0.23.1280.709" timestamp="1593450534328" />
     <state x="149" y="23" key="SettingsEditor" timestamp="1593419826472">
       <screen x="0" y="0" width="1280" height="800" />
     </state>

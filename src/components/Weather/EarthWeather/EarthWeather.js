@@ -1,25 +1,26 @@
 import React from "react";
 import {Input} from 'antd';
 import {EarthWeatherData} from "./EarthWeatherData";
+import {SearchContainer, WeatherTitle} from "../Weather.styles";
 
 export const EarthWeather = ({fetchEarthData, earthWeather, city, error}) => {
   const {Search} = Input;
 
   return (
     <>
-      <h1 className='weather-title'>
+      <WeatherTitle>
         {earthWeather == null ? 'Enter the name of the city to get started!'
-                              : <>Current weather in <span className='weather-title__location'>{city}</span></>
+                              : <>Current weather in <span className='weather-location'>{city}</span></>
         }
-      </h1>
-      <div className='search-container'>
+      </WeatherTitle>
+      <SearchContainer>
         <Search
             onSearch={city => fetchEarthData(city)}
             style={{maxWidth: 400, borderRadius: 10}}
             size="large"
         />
         {error !== null && <p>{error}</p>}
-      </div>
+      </SearchContainer>
       {earthWeather !== null && <EarthWeatherData earthWeather={earthWeather}/>}
     </>
   )

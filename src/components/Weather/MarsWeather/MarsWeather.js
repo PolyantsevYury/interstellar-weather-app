@@ -1,6 +1,7 @@
 import {Unit} from "./Unit/Unit";
 import MarsWeatherData from "./MarsWeatherData";
 import React from "react";
+import {SectionTitle, WeatherTitle} from "../Weather.styles";
 
 export const MarsWeather = ({marsWeather, isMetric, marsLoading, setMetric, selectedSol}) => {
   return (
@@ -8,10 +9,10 @@ export const MarsWeather = ({marsWeather, isMetric, marsLoading, setMetric, sele
         <div>Loading ...</div>
     ) : (
         <>
-          <h1 className='weather-title'> Latest weather at
-            <span className='weather-title__location'> Elysium Plantitia</span>
-          </h1>
-          <div className='weather-date'>
+          <WeatherTitle> Latest weather at
+            <span className='weather-location'> Elysium Plantitia</span>
+          </WeatherTitle>
+          <SectionTitle>
             <div>
               <h2>
                 {marsWeather[selectedSol].sol || 'sol'}<span> (day on Mars)</span>
@@ -21,7 +22,7 @@ export const MarsWeather = ({marsWeather, isMetric, marsLoading, setMetric, sele
             <div className='unit-container'>
               <Unit isMetric={isMetric} setMetric={setMetric}/>
             </div>
-          </div>
+          </SectionTitle>
           <MarsWeatherData sol={marsWeather[selectedSol]} isMetric={isMetric}/>
         </>
     )

@@ -8,7 +8,7 @@ import EarthBGImage from './img/earth.jpg';
 
 import {formatDate} from "./helpers";
 import {TogglePlanet} from "./components/TogglePlanet/TogglePlanet";
-import Previous from "./components/Weather/MarsWeather/Previous/Previous";
+import {Previous} from "./components/Weather/MarsWeather/Previous/Previous";
 import {MarsWeather} from "./components/Weather/MarsWeather/MarsWeather";
 import {EarthWeather} from "./components/Weather/EarthWeather/EarthWeather";
 

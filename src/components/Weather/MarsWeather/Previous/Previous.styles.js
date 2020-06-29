@@ -19,14 +19,6 @@ export const PreviousDays = styled.div`
 `;
 
 export const PreviousDay = styled.div`
-  p {
-    margin: 0;
-  }
-  
-  .previous-day__sol {
-    margin: 0;
-  }
-  
   .previous-day__date {
     font-size: 0.9 rem;
     color: #ADADAD;
