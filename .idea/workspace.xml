@@ -16,16 +16,26 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1de50740-1616-4768-97b6-f7c2e1f52600" name="Default Changelist" comment="fix loading of Previous weather">
-      <change afterPath="$PROJECT_DIR$/src/components/TogglePlanet.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/TogglePlanet.styles.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/img/909_w1812-h800_cx0-cy0_cw3835-ch1693.jpg" afterDir="false" />
+    <list default="true" id="1de50740-1616-4768-97b6-f7c2e1f52600" name="Default Changelist" comment="Add planet (theme) toggle&#10;Refactoring AppWrapper layout&#10;Change BG image and some styles">
+      <change afterPath="$PROJECT_DIR$/src/components/Weather/EarthWeather/EarthWeather.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Weather/EarthWeather/EarthWeatherData.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Weather/MarsWeather/MarsWeather.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/img/earth.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/theme.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.styles.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.styles.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Previous.styles.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Previous.styles.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/img/mars.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/img/marsMobile.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/api.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/api.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Previous.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Weather/MarsWeather/Previous/Previous.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Previous.styles.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Weather/MarsWeather/Previous/Previous.styles.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/TogglePlanet.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/TogglePlanet/TogglePlanet.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/TogglePlanet.styles.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/TogglePlanet/TogglePlanet.styles.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Unit.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Weather/MarsWeather/Unit/Unit.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Unit.styles.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Weather/MarsWeather/Unit/Unit.styles.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/WeatherData.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Weather/MarsWeather/MarsWeatherData.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/WeatherData.styles.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Weather/WeatherData.styles.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/logo.svg" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,8 +79,11 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src" />
-      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/src/components/Weather" />
+      <recent name="$PROJECT_DIR$/src/components/Weather/EarthWeather/WeatherSearch" />
+      <recent name="$PROJECT_DIR$/src/components/Weather/MarsWeather" />
+      <recent name="$PROJECT_DIR$/src/components/Weather/EarthWeather" />
+      <recent name="$PROJECT_DIR$/src/components/WeatherBlock/WeatherData" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src" />
@@ -89,7 +102,7 @@
       <option name="presentableId" value="Default" />
       <updated>1592946977507</updated>
       <workItem from="1592946978782" duration="693000" />
-      <workItem from="1593049484251" duration="83693000" />
+      <workItem from="1593049484251" duration="142952000" />
     </task>
     <task id="LOCAL-00001" summary="Basic structure of layout">
       <created>1593028442226</created>
@@ -147,7 +160,14 @@
       <option name="project" value="LOCAL" />
       <updated>1593272801009</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Add planet (theme) toggle&#10;Refactoring AppWrapper layout&#10;Change BG image and some styles">
+      <created>1593297238564</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1593297238564</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -187,7 +207,8 @@
     <MESSAGE value="Redesign main weather block, add responsive layout" />
     <MESSAGE value="Add valid Previous weather data,&#10;Fix validate wind speed" />
     <MESSAGE value="fix loading of Previous weather" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix loading of Previous weather" />
+    <MESSAGE value="Add planet (theme) toggle&#10;Refactoring AppWrapper layout&#10;Change BG image and some styles" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add planet (theme) toggle&#10;Refactoring AppWrapper layout&#10;Change BG image and some styles" />
   </component>
   <component name="WindowStateProjectService">
     <state x="370" y="209" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1593043052902">
@@ -198,18 +219,18 @@
       <screen x="0" y="0" width="1280" height="800" />
     </state>
     <state x="271" y="82" key="#com.intellij.openapi.keymap.impl.ui.EditKeymapsDialog/0.0.1280.800@0.0.1280.800" timestamp="1593199187945" />
-    <state x="378" y="154" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1593291403012">
+    <state x="378" y="154" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1593382008183">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state x="378" y="154" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1280.800@0.0.1280.800" timestamp="1593291403012" />
+    <state x="378" y="154" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1280.800@0.0.1280.800" timestamp="1593382008183" />
     <state x="294" y="185" key="EditFileWatcherDialog" timestamp="1593087647351">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
     <state x="294" y="185" key="EditFileWatcherDialog/0.0.1280.800@0.0.1280.800" timestamp="1593087647351" />
-    <state x="149" y="39" key="SettingsEditor" timestamp="1593102032395">
+    <state x="149" y="39" key="SettingsEditor" timestamp="1593407230401">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state x="149" y="39" key="SettingsEditor/0.0.1280.800@0.0.1280.800" timestamp="1593102032395" />
+    <state x="149" y="39" key="SettingsEditor/0.0.1280.800@0.0.1280.800" timestamp="1593407230401" />
     <state x="305" y="124" width="670" height="676" key="search.everywhere.popup" timestamp="1593259591486">
       <screen x="0" y="0" width="1280" height="800" />
     </state>

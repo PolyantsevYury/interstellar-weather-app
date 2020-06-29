@@ -1,79 +1,97 @@
 import React, {useEffect, useState} from 'react';
-import {GlobalStyle, AppWrapper, WeatherBlock} from './App.styles'
-import BGImage from './img/mars.jpg'
-import WeatherData from "./components/WeatherData";
-import Previous from "./components/Previous";
-import 'antd/dist/antd.css';
-import Unit from "./components/Unit";
-import { MARS_API_URL } from './api';
-import { formatDate } from './helpers';
-import {TogglePlanet} from "./components/TogglePlanet";
+import axios from "axios";
+import {GlobalStyle, AppWrapper, WeatherBlock} from './App.styles';
+import { ThemeProvider } from 'styled-components';
+import {marsTheme, earthTheme} from './theme';
+import MarsBGImage from './img/mars.jpg';
+import EarthBGImage from './img/earth.jpg';
+
+import {formatDate} from "./helpers";
+import {TogglePlanet} from "./components/TogglePlanet/TogglePlanet";
+import Previous from "./components/Weather/MarsWeather/Previous/Previous";
+import {MarsWeather} from "./components/Weather/MarsWeather/MarsWeather";
+import {EarthWeather} from "./components/Weather/EarthWeather/EarthWeather";
 
 const App = () => {
-    const [loading, setLoading] = useState(true);
+    const [planet, setPlanet] = useState('Mars');
+
+    // Mars
+    const [marsWeather, setMarsWeather] = useState([]);
+    const [marsLoading, setMarsLoading] = useState(true);
     const [isMetric, setMetric] = useState(true);
-    const [weather, setWeather] = useState([]);
     const [selectedSol, setSelectedSol] = useState(); // "Sol" is a Mars solar day
-    console.log(weather);
+
+    const fetchMarsData = async () => {
+        const url = `https://api.nasa.gov/insight_weather/?api_key=tCe59kbvnGzFzWrvO4ufe1e8g748WbgiR9e5Wr2B&feedtype=json&ver=1.0`;
+        const request = axios.get(url);
+        const response = await request;
+        const marsWeather = response.data.sol_keys.map((solKey, i) => {
+            return {
+                sol: solKey,
+                maxTemp: response.data[solKey].AT?.mx || 'No data',
+                minTemp: response.data[solKey].AT?.mn || 'No data',
+                windSpeed: response.data[solKey].HWS && response.data[solKey].HWS.av ? Math.round(response.data[solKey].HWS.av) : 'No data',
+                date: formatDate(new Date(response.data[solKey].First_UTC)),
+                itemNumber: i,
+            };
+        });
+        setMarsWeather(marsWeather);
+        setSelectedSol(marsWeather.length - 1);
+        setMarsLoading(false);
+    };
+
+    // Earth
+    const [earthWeather, setEarthWeather] = useState(null);
+    const [city, setCity] = useState(null);
+    const [error, setError] = useState(null);
+
+    const fetchEarthData = async city => {
+        if (!city) {
+            return setError("Please enter the name of the city"), setEarthWeather(null);
+        }
+        const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=3d210771b356ac5fbc2fd51f7a263aa2&units=metric`;
+        const request = axios.get(url);
+        const response = await request;
+        setError(null);
+        setEarthWeather(response.data.main);
+        setCity(response.data.name);
+    };
 
     useEffect(() => {
-        const fetchFromAPI = async () => {
-            const weather = await (await fetch(MARS_API_URL)).json();
-            const marsWeather = weather.sol_keys.map((solKey, i) => {
-                return {
-                    sol: solKey,
-                    maxTemp: weather[solKey].AT?.mx || 'No data',
-                    minTemp: weather[solKey].AT?.mn || 'No data',
-                    windSpeed: weather[solKey].HWS && weather[solKey].HWS.av ? Math.round(weather[solKey].HWS.av) : 'No data',
-                    date: formatDate(new Date(weather[solKey].First_UTC)),
-                    itemNumber: i,
-                };
-            });
-            setWeather(marsWeather);
-            setSelectedSol(marsWeather.length - 1);
-            setLoading(false);
-        };
-
-        fetchFromAPI();
+        fetchMarsData();
     }, []);
 
     return (
-        <>
-            <GlobalStyle bgImage={BGImage}/>
-            <AppWrapper>
-                <div className='content-container'>
-                    <TogglePlanet/>
-                    <WeatherBlock>
-                        {loading ? (
-                            <div>Loading ...</div>
-                        ) : (
-                            <>
-                                <h1 className='weather-title'> Latest weather at
-                                    <span className='weather-title__location'> Elysium Plantitia</span>
-                                </h1>
-                                <div className='weather-date'>
-                                    <div>
-                                        <h2>
-                                            {weather[selectedSol].sol || 'sol'}<span> (day on Mars)</span>
-                                        </h2>
-                                        <p>{weather[selectedSol].date || 'date'}</p>
-                                    </div>
-                                    <div>
-                                        <Unit isMetric={isMetric} setMetric={setMetric}/>
-                                    </div>
-                                </div>
-                                <WeatherData sol={weather[selectedSol]} isMetric={isMetric}/>
-                            </>
-                        )}
-                    </WeatherBlock>
-                </div>
-                <Previous weather={weather}
-                          setSelectedSol={setSelectedSol}
-                          isMetric={isMetric}
-                          loading={loading}
-                />
-            </AppWrapper>
-        </>
+        <ThemeProvider theme={planet === 'Mars' ? marsTheme : earthTheme}>
+            <>
+                <GlobalStyle imageUrl={planet === 'Mars' ? MarsBGImage : EarthBGImage}/>
+                <img src={MarsBGImage} alt={'#'} className='preloadImage'/>
+                <img src={EarthBGImage} alt={'#'} className='preloadImage'/>
+                <AppWrapper>
+                    <div className='content-container'>
+                        <TogglePlanet planet={planet} setPlanet={setPlanet}/>
+                        <WeatherBlock>
+                            {planet === 'Mars' ? <MarsWeather  marsWeather={marsWeather}
+                                                               isMetric={isMetric}
+                                                               marsLoading={marsLoading}
+                                                               setMetric={setMetric}
+                                                               selectedSol={selectedSol} />
+                                               : <EarthWeather fetchEarthData={fetchEarthData}
+                                                               earthWeather={earthWeather}
+                                                               city={city}
+                                                               error={error} />
+                            }
+                        </WeatherBlock>
+                    </div>
+                    {planet === 'Mars' &&
+                    <Previous marsWeather={marsWeather}
+                              setSelectedSol={setSelectedSol}
+                              isMetric={isMetric}
+                              marsLoading={marsLoading}
+                    />}
+                </AppWrapper>
+            </>
+        </ThemeProvider>
     );
 }
 

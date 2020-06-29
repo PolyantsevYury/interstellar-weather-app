@@ -1,17 +1,15 @@
 import styled from "styled-components";
 
 export const ToggleWrapper = styled.div`
-    
-    align-self: flex-end;
-    
-    .toggleWrapper {
-        overflow: hidden;
-        padding: 0 70px;
-    }
-    .toggleWrapper input {
+    overflow: hidden;
+    padding: 0 70px;
+    height: 40px;
+        
+    input {
         position: absolute;
         left: -99em;
     }
+    
     .toggle {
         cursor: pointer;
         display: inline-block;

@@ -1,11 +1,10 @@
 import {ToggleWrapper} from "./TogglePlanet.styles";
 import React from "react";
 
-export const TogglePlanet = () => {
+export const TogglePlanet = ({planet, setPlanet}) => {
     return (
         <ToggleWrapper>
-            <div className="toggleWrapper">
-                <input type="checkbox" onChange={() => console.log('changed')} className="dn" id="dn" defaultChecked={true}/>
+                <input type="checkbox" onChange={() => setPlanet(planet === 'Mars' ? 'Earth' : 'Mars')} className="dn" id="dn" defaultChecked={(planet === 'Mars')}/>
                 <label htmlFor="dn" className="toggle">
                             <span className="toggle__handler">
                               <span className="crater crater--1"></span>
@@ -19,7 +18,6 @@ export const TogglePlanet = () => {
                     <span className="star star--5"></span>
                     <span className="star star--6"></span>
                 </label>
-            </div>
         </ToggleWrapper>
     )
 }

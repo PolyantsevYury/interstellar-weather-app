@@ -1,27 +1,27 @@
 import React from 'react';
 import {PreviousDay, PreviousDays, PreviousWrapper} from "./Previous.styles";
 import { List, Card } from 'antd';
-import {formatTemperature} from "../helpers";
+import {formatTemperature} from "../../../../helpers";
 
 const Previous = ({
-                      weather,
+                      marsWeather,
                       setSelectedSol,
                       isMetric,
-                      loading,
+                      marsLoading,
                   }) => {
     return (
         <PreviousWrapper>
             <h2 className='previous-title'>Previous 7 days</h2>
             <PreviousDays>
-                {loading ? (
+                {marsLoading ? (
                     <div>Loading ...</div>
                 ) : (
                     <List
                         grid={{gutter: 12, column: 7}}
-                        dataSource={weather}
+                        dataSource={marsWeather}
                         style={{minWidth: '1000px'}}
                         renderItem={item => (
-                            <List.Item key={weather.sol}>
+                            <List.Item key={marsWeather.sol}>
                                 <PreviousDay>
                                     <Card bodyStyle={{padding: 10}}
                                           style={{

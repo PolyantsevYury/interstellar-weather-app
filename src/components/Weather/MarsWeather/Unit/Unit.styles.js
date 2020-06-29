@@ -20,7 +20,7 @@ export const Toggle = styled.button`
   background: transparent;
   padding: 0;
   border-radius: 100vmax;
-  margin: 0 1em;
+  margin: 0 10px;
   outline: 0;
 
   ::after {

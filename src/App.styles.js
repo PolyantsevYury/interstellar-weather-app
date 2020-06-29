@@ -17,11 +17,15 @@ export const GlobalStyle = createGlobalStyle`
     }
   
     body {
-        background: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.4)), url(${props => props.bgImage});
+        background: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.4)), url(${props => props.imageUrl});
         background-size: cover;
         background-attachment: fixed;
-        background-position: 80% 40%;
-        font-size: 1rem;
+        background-position: ${({ theme }) => theme.backgroundPosition};
+        
+    }
+    
+    .preloadImage {
+        display: none;
     }
     
     h1, h2, h3, h4 {
@@ -54,7 +58,7 @@ export const AppWrapper = styled.div`
 
 export const WeatherBlock = styled.main`
     background: rgba(0, 0, 0, 0.7);
-    padding: 2em;
+    padding: 20px;
     margin-top: 20px;
     border-radius: 14px;
     border: 1px solid #1E1E1E;
@@ -67,14 +71,15 @@ export const WeatherBlock = styled.main`
         align-self: center;
         text-align: center;
         font-size: var(--fs-h1);
-        font-weight: var(--fw-light);
-        letter-spacing: 2px;
+        font-weight: var(--fw-semi);
+        margin-bottom: 20px;
         color: #CDCDCD;
         }
         
         .weather-title__location {
-            color: #d06d6d;
+            color: ${({ theme }) => theme.themeColor};
             text-transform: uppercase;
+            letter-spacing: 2px;
         }
     }
     
@@ -94,5 +99,11 @@ export const WeatherBlock = styled.main`
             font-size: var(--fs-body);
             color: #ADADAD;
         }
+    }
+    
+    .search-container {
+        margin: 20px 0 20px 0;
+        text-align: center;
+        
     }
 `;
