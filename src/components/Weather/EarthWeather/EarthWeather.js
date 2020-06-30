@@ -12,13 +12,19 @@ export const EarthWeather = ({earthWeather, setEarthWeather, city, setCity}) => 
 
   const fetchEarthData = async city => {
     if (!city) {
-      return setError("Please enter the name of the city"), setEarthWeather(null);
+      return setError("Please enter the name of the city");
     }
     setEarthLoading(true)
     const url = `https://api.openweathermap.org/data/2.5/` +
         `weather?q=${city}&appid=3d210771b356ac5fbc2fd51f7a263aa2&units=metric`;
-    const request = axios.get(url);
-    const response = await request;
+    const response = await axios.get(url)
+        .catch(error => {
+          setEarthLoading(false)
+          return setError(error.response.data.message);
+    });
+    if (!response) {
+      return
+    }
     setError(null);
     setEarthWeather(response.data.main);
     setCity(response.data.name);
@@ -39,7 +45,7 @@ export const EarthWeather = ({earthWeather, setEarthWeather, city, setCity}) => 
             style={{maxWidth: 400, borderRadius: 10}}
             size="large"
         />
-        {error !== null && <p>{error}</p>}
+        {error !== null && <p className='error'>{error}</p>}
       </SearchContainer>
       {earthWeather !== null && <EarthWeatherData earthWeather={earthWeather}/>}
     </>

@@ -15,6 +15,10 @@ import {EarthWeather} from "./components/Weather/EarthWeather/EarthWeather";
 const App = () => {
   const [planet, setPlanet] = useState('Mars');
 
+  // Earth
+  const [earthWeather, setEarthWeather] = useState(null);
+  const [city, setCity] = useState(null);
+
   // Mars
   const [marsWeather, setMarsWeather] = useState([]);
   const [marsLoading, setMarsLoading] = useState(true);
@@ -41,10 +45,6 @@ const App = () => {
     setSelectedSol(marsWeather.length - 1);
     setMarsLoading(false);
   };
-
-  // Earth
-  const [earthWeather, setEarthWeather] = useState(null);
-  const [city, setCity] = useState(null);
 
   useEffect(() => {
     fetchMarsData();

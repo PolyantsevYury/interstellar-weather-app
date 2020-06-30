@@ -38,4 +38,9 @@ export const SectionTitle = styled.div`
 export const SearchContainer = styled.div`
   margin: 20px 0;
   text-align: center;
+  
+  .error {
+    font-size: 1.2rem;
+    color: #fff;
+  }
 `;
