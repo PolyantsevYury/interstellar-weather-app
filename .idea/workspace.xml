@@ -16,15 +16,10 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1de50740-1616-4768-97b6-f7c2e1f52600" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/Weather/Weather.styles.js" afterDir="false" />
+    <list default="true" id="1de50740-1616-4768-97b6-f7c2e1f52600" name="Default Changelist" comment="Refactoring styles,&#10;try to fix background-attachment bug on mobile">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.styles.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.styles.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Weather/EarthWeather/EarthWeather.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Weather/EarthWeather/EarthWeather.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Weather/MarsWeather/MarsWeather.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Weather/MarsWeather/MarsWeather.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Weather/MarsWeather/Previous/Previous.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Weather/MarsWeather/Previous/Previous.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Weather/MarsWeather/Previous/Previous.styles.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Weather/MarsWeather/Previous/Previous.styles.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -165,7 +160,14 @@
       <option name="project" value="LOCAL" />
       <updated>1593414209749</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Refactoring styles,&#10;try to fix background-attachment bug on mobile">
+      <created>1593473777664</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1593473777665</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -207,7 +209,8 @@
     <MESSAGE value="fix loading of Previous weather" />
     <MESSAGE value="Add planet (theme) toggle&#10;Refactoring AppWrapper layout&#10;Change BG image and some styles" />
     <MESSAGE value="Add switch theme option&#10;Add Theme Provider&#10;Create Earth weather functional&#10;Change application structure" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add switch theme option&#10;Add Theme Provider&#10;Create Earth weather functional&#10;Change application structure" />
+    <MESSAGE value="Refactoring styles,&#10;try to fix background-attachment bug on mobile" />
+    <option name="LAST_COMMIT_MESSAGE" value="Refactoring styles,&#10;try to fix background-attachment bug on mobile" />
   </component>
   <component name="WindowStateProjectService">
     <state x="370" y="209" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1593043052902">

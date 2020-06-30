@@ -1,10 +1,29 @@
-import React from "react";
+import React, {useState} from "react";
 import {Input} from 'antd';
 import {EarthWeatherData} from "./EarthWeatherData";
 import {SearchContainer, WeatherTitle} from "../Weather.styles";
+import axios from "axios";
 
-export const EarthWeather = ({fetchEarthData, earthWeather, city, error}) => {
+export const EarthWeather = ({earthWeather, setEarthWeather, city, setCity}) => {
+  const [earthLoading, setEarthLoading] = useState(false);
+  const [error, setError] = useState(null);
+
   const {Search} = Input;
+
+  const fetchEarthData = async city => {
+    if (!city) {
+      return setError("Please enter the name of the city"), setEarthWeather(null);
+    }
+    setEarthLoading(true)
+    const url = `https://api.openweathermap.org/data/2.5/` +
+        `weather?q=${city}&appid=3d210771b356ac5fbc2fd51f7a263aa2&units=metric`;
+    const request = axios.get(url);
+    const response = await request;
+    setError(null);
+    setEarthWeather(response.data.main);
+    setCity(response.data.name);
+    setEarthLoading(false)
+  };
 
   return (
     <>
@@ -16,6 +35,7 @@ export const EarthWeather = ({fetchEarthData, earthWeather, city, error}) => {
       <SearchContainer>
         <Search
             onSearch={city => fetchEarthData(city)}
+            loading={earthLoading}
             style={{maxWidth: 400, borderRadius: 10}}
             size="large"
         />

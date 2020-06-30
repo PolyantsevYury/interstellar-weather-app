@@ -45,20 +45,6 @@ const App = () => {
   // Earth
   const [earthWeather, setEarthWeather] = useState(null);
   const [city, setCity] = useState(null);
-  const [error, setError] = useState(null);
-
-  const fetchEarthData = async city => {
-    if (!city) {
-      return setError("Please enter the name of the city"), setEarthWeather(null);
-    }
-    const url = `https://api.openweathermap.org/data/2.5/` +
-        `weather?q=${city}&appid=3d210771b356ac5fbc2fd51f7a263aa2&units=metric`;
-    const request = axios.get(url);
-    const response = await request;
-    setError(null);
-    setEarthWeather(response.data.main);
-    setCity(response.data.name);
-  };
 
   useEffect(() => {
     fetchMarsData();
@@ -80,10 +66,10 @@ const App = () => {
                                  marsLoading={marsLoading}
                                  setMetric={setMetric}
                                  selectedSol={selectedSol}/>
-                  : <EarthWeather fetchEarthData={fetchEarthData}
-                                  earthWeather={earthWeather}
+                  : <EarthWeather earthWeather={earthWeather}
+                                  setEarthWeather={setEarthWeather}
                                   city={city}
-                                  error={error}/>
+                                  setCity={setCity}/>
               }
             </WeatherBlock>
           </div>
