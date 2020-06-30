@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "a3745ccccba83d34cf1b12dfbb9be17e",
+    "revision": "a4189a89d9aec49ef93f85e41a2a3911",
     "url": "/interstellar-weather-app/index.html"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/interstellar-weather-app/static/js/2.2ef4ec01.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "613b218a550b74bd3a16",
-    "url": "/interstellar-weather-app/static/js/main.088d5316.chunk.js"
+    "revision": "281a3b9b254022f463f4",
+    "url": "/interstellar-weather-app/static/js/main.010c4e40.chunk.js"
   },
   {
     "revision": "d6ecb7b3a0c835c511a5",
