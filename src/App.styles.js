@@ -22,13 +22,22 @@ export const GlobalStyle = createGlobalStyle`
     height: 100%;
   }
   
-
   body {
-    background: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.4)), url(${props => props.imageUrl});
-    background-size: cover;
-    background-attachment: fixed;
-    background-position: ${({theme}) => theme.backgroundPosition};
     height: 100%;
+  }
+  
+  body:before {
+    content: "";
+    z-index: -1;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-size: cover;
+    background: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.4)), url(${props => props.imageUrl});
+    // background-position: ${({theme}) => theme.backgroundPosition};
+    background-position: center;
   }
   
   .preloadImage {
