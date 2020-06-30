@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "239ea3743b927a5556b54141fb26be29",
+    "revision": "a3745ccccba83d34cf1b12dfbb9be17e",
     "url": "/interstellar-weather-app/index.html"
   },
   {
-    "revision": "c3106d3e461f5efedd07",
+    "revision": "71cf3227b9c4855d0e0f",
     "url": "/interstellar-weather-app/static/css/2.3cb76441.chunk.css"
   },
   {
-    "revision": "c3106d3e461f5efedd07",
-    "url": "/interstellar-weather-app/static/js/2.4f6f55b8.chunk.js"
+    "revision": "71cf3227b9c4855d0e0f",
+    "url": "/interstellar-weather-app/static/js/2.2ef4ec01.chunk.js"
   },
   {
     "revision": "3453b8997016469371284a28c0e873e2",
-    "url": "/interstellar-weather-app/static/js/2.4f6f55b8.chunk.js.LICENSE.txt"
+    "url": "/interstellar-weather-app/static/js/2.2ef4ec01.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "7e979c11ebbb29b87ce2",
-    "url": "/interstellar-weather-app/static/js/main.5a4c3485.chunk.js"
+    "revision": "613b218a550b74bd3a16",
+    "url": "/interstellar-weather-app/static/js/main.088d5316.chunk.js"
   },
   {
     "revision": "d6ecb7b3a0c835c511a5",
