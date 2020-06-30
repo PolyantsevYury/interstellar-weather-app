@@ -16,11 +16,15 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1de50740-1616-4768-97b6-f7c2e1f52600" name="Default Changelist" comment="Move fetching Earth data to Earth component&#10;Add preloader for fetching Earth weather data">
+    <list default="true" id="1de50740-1616-4768-97b6-f7c2e1f52600" name="Default Changelist" comment="Add axios error handler">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Weather/EarthWeather/EarthWeather.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Weather/EarthWeather/EarthWeather.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.styles.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.styles.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Weather/MarsWeather/MarsWeather.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Weather/MarsWeather/MarsWeather.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Weather/MarsWeather/Previous/Previous.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Weather/MarsWeather/Previous/Previous.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Weather/MarsWeather/Previous/Previous.styles.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Weather/MarsWeather/Previous/Previous.styles.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Weather/Weather.styles.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Weather/Weather.styles.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Weather/WeatherData.styles.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Weather/WeatherData.styles.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -175,7 +179,14 @@
       <option name="project" value="LOCAL" />
       <updated>1593481903037</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Add axios error handler">
+      <created>1593485766610</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1593485766610</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -219,7 +230,8 @@
     <MESSAGE value="Add switch theme option&#10;Add Theme Provider&#10;Create Earth weather functional&#10;Change application structure" />
     <MESSAGE value="Refactoring styles,&#10;try to fix background-attachment bug on mobile" />
     <MESSAGE value="Move fetching Earth data to Earth component&#10;Add preloader for fetching Earth weather data" />
-    <option name="LAST_COMMIT_MESSAGE" value="Move fetching Earth data to Earth component&#10;Add preloader for fetching Earth weather data" />
+    <MESSAGE value="Add axios error handler" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add axios error handler" />
   </component>
   <component name="WindowStateProjectService">
     <state x="370" y="209" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1593043052902">
@@ -234,6 +246,10 @@
       <screen x="0" y="0" width="1280" height="800" />
     </state>
     <state x="378" y="154" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1280.800@0.0.1280.800" timestamp="1593382008183" />
+    <state x="100" y="100" width="1080" height="600" key="DiffContextDialog" timestamp="1593487885855">
+      <screen x="0" y="23" width="1280" height="709" />
+    </state>
+    <state x="100" y="100" width="1080" height="600" key="DiffContextDialog/0.23.1280.709@0.23.1280.709" timestamp="1593487885855" />
     <state x="294" y="185" key="EditFileWatcherDialog" timestamp="1593087647351">
       <screen x="0" y="0" width="1280" height="800" />
     </state>

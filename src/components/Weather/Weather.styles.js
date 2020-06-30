@@ -7,6 +7,11 @@ export const WeatherTitle = styled.h1`
   font-weight: var(--fw-semi);
   margin-bottom: 20px;
   color: #CDCDCD;
+  line-height: 1.2;
+  
+  @media (max-width: 767px) {
+    font-size: 1.3rem;
+  }
   
   .weather-location {
     color: ${({theme}) => theme.themeColor};

@@ -17,6 +17,10 @@ export const WeatherItem = styled.div`
   .weather-instance-container {
     display: flex;
     margin-bottom: 10px;
+    
+    @media (max-width: 767px) {
+      margin-bottom: 0;
+    }
   }
   
   .photo {
@@ -41,6 +45,10 @@ export const WeatherInstance = styled.div`
     font-size: 1.7rem;
     display: flex;
     justify-content: center;
+    
+    @media (max-width: 767px) {
+      font-size: 1.5rem;
+    }
   }
   
   .instance-description {

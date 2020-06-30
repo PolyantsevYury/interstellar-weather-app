@@ -7,15 +7,11 @@ export const Previous = ({
                     marsWeather,
                     setSelectedSol,
                     isMetric,
-                    marsLoading,
                   }) => {
   return (
     <PreviousWrapper>
       <h2 className='previous-title'>Previous 7 days</h2>
       <PreviousDays>
-        {marsLoading ? (
-            <div>Loading ...</div>
-        ) : (
             <List
                 grid={{gutter: 12, column: 7}}
                 dataSource={marsWeather}
@@ -49,7 +45,6 @@ export const Previous = ({
                     </List.Item>
                 )}
             />
-        )}
       </PreviousDays>
     </PreviousWrapper>
   )

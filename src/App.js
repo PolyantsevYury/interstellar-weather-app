@@ -73,11 +73,10 @@ const App = () => {
               }
             </WeatherBlock>
           </div>
-          {planet === 'Mars' &&
+          {(planet === 'Mars' && !marsLoading) &&
           <Previous marsWeather={marsWeather}
                     setSelectedSol={setSelectedSol}
                     isMetric={isMetric}
-                    marsLoading={marsLoading}
           />}
         </AppWrapper>
       </>

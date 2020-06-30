@@ -22,21 +22,12 @@ export const GlobalStyle = createGlobalStyle`
     height: 100%;
   }
   
-  body:before {
-    content: "";
-    display: block;
-    position: fixed;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    z-index: -10;
+
+  body {
     background: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.4)), url(${props => props.imageUrl});
-    background-position: ${({theme}) => theme.backgroundPosition};
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
     background-size: cover;
+    background-attachment: fixed;
+    background-position: ${({theme}) => theme.backgroundPosition};
     height: 100%;
   }
   
@@ -95,5 +86,12 @@ export const WeatherBlock = styled.main`
   
   @media (max-width: 767px) {
     margin-top: 6px;
+  }
+  
+  .loading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40vh
   }
 `;

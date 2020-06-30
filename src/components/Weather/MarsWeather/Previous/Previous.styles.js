@@ -2,13 +2,14 @@ import styled from 'styled-components';
 
 export const PreviousWrapper = styled.div`
   width: 100%;
-  
+ 
   .previous-title {
     color: #fff;
     margin: 20px 40px;
     
     @media (max-width: 767px) {
-      margin: 20px 0;
+      margin: 12px 0;
+      text-align: center;
     }
   }
 `;
