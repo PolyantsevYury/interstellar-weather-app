@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.js": "/interstellar-weather-app/static/js/main.aefa9052.chunk.js",
-    "main.js.map": "/interstellar-weather-app/static/js/main.aefa9052.chunk.js.map",
+    "main.js": "/interstellar-weather-app/static/js/main.64a20ce9.chunk.js",
+    "main.js.map": "/interstellar-weather-app/static/js/main.64a20ce9.chunk.js.map",
     "runtime-main.js": "/interstellar-weather-app/static/js/runtime-main.15f8552a.js",
     "runtime-main.js.map": "/interstellar-weather-app/static/js/runtime-main.15f8552a.js.map",
     "static/css/2.3cb76441.chunk.css": "/interstellar-weather-app/static/css/2.3cb76441.chunk.css",
     "static/js/2.2ef4ec01.chunk.js": "/interstellar-weather-app/static/js/2.2ef4ec01.chunk.js",
     "static/js/2.2ef4ec01.chunk.js.map": "/interstellar-weather-app/static/js/2.2ef4ec01.chunk.js.map",
     "index.html": "/interstellar-weather-app/index.html",
-    "precache-manifest.a6b0b346dea6519e0620dff2fc96525b.js": "/interstellar-weather-app/precache-manifest.a6b0b346dea6519e0620dff2fc96525b.js",
+    "precache-manifest.0ac099a978e2c09a31edf926b9ee36cf.js": "/interstellar-weather-app/precache-manifest.0ac099a978e2c09a31edf926b9ee36cf.js",
     "service-worker.js": "/interstellar-weather-app/service-worker.js",
     "static/css/2.3cb76441.chunk.css.map": "/interstellar-weather-app/static/css/2.3cb76441.chunk.css.map",
     "static/js/2.2ef4ec01.chunk.js.LICENSE.txt": "/interstellar-weather-app/static/js/2.2ef4ec01.chunk.js.LICENSE.txt",
@@ -20,6 +20,6 @@
     "static/js/runtime-main.15f8552a.js",
     "static/css/2.3cb76441.chunk.css",
     "static/js/2.2ef4ec01.chunk.js",
-    "static/js/main.aefa9052.chunk.js"
+    "static/js/main.64a20ce9.chunk.js"
   ]
 }
