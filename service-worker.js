@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/interstellar-weather-app/precache-manifest.0ac099a978e2c09a31edf926b9ee36cf.js"
+  "/interstellar-weather-app/precache-manifest.7c77f808201eab4b41197a85cb7d9244.js"
 );
 
 self.addEventListener('message', (event) => {
