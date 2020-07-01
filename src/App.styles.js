@@ -15,29 +15,10 @@ export const GlobalStyle = createGlobalStyle`
     --fs-h1: 1.5rem;
     --fs-h2: 2.25rem;
     --fs-body: 1rem;
-    --fs-xl: 4.5rem;
   }
   
-  html {
+  html, body{
     height: 100%;
-  }
-  
-  body {
-    height: 100%;
-  }
-  
-  body:before {
-    content: "";
-    z-index: -1;
-    position: fixed;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    background-size: cover;
-    background: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.4)), url(${props => props.imageUrl});
-    // background-position: ${({theme}) => theme.backgroundPosition};
-    background-position: center;
   }
   
   .preloadImage {
@@ -56,15 +37,17 @@ export const GlobalStyle = createGlobalStyle`
 `;
 
 export const AppWrapper = styled.div`
-
-  height: 100vh;
+  background: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.4)), url(${props => props.imageUrl});
+  background-size: cover;
+  background-position: ${({theme}) => theme.backgroundPosition};
+  
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
   padding: 20px 20px 0 20px;
   color: #F4F4F4;
-  margin: 0;
   font-family: 'Montserrat', sans-serif;
   line-height: 1.6;
     

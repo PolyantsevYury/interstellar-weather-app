@@ -53,10 +53,10 @@ const App = () => {
   return (
     <ThemeProvider theme={planet === 'Mars' ? marsTheme : earthTheme}>
       <>
-        <GlobalStyle imageUrl={planet === 'Mars' ? MarsBGImage : EarthBGImage}/>
+        <GlobalStyle/>
         <img src={MarsBGImage} alt={'#'} className='preloadImage'/>
         <img src={EarthBGImage} alt={'#'} className='preloadImage'/>
-        <AppWrapper>
+        <AppWrapper imageUrl={planet === 'Mars' ? MarsBGImage : EarthBGImage}>
           <div className='content-container'>
             <TogglePlanet planet={planet} setPlanet={setPlanet}/>
             <WeatherBlock>
