@@ -16,7 +16,7 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1de50740-1616-4768-97b6-f7c2e1f52600" name="Default Changelist" comment="Try to fix background-attachment bug on mobile">
+    <list default="true" id="1de50740-1616-4768-97b6-f7c2e1f52600" name="Default Changelist" comment="Fix background img on mobile">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.styles.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.styles.js" afterDir="false" />
@@ -195,7 +195,14 @@
       <option name="project" value="LOCAL" />
       <updated>1593536257542</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="Fix background img on mobile">
+      <created>1593597321617</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1593597321617</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -242,7 +249,8 @@
     <MESSAGE value="Add axios error handler" />
     <MESSAGE value="Add preloader (spiner)" />
     <MESSAGE value="Try to fix background-attachment bug on mobile" />
-    <option name="LAST_COMMIT_MESSAGE" value="Try to fix background-attachment bug on mobile" />
+    <MESSAGE value="Fix background img on mobile" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fix background img on mobile" />
   </component>
   <component name="WindowStateProjectService">
     <state x="370" y="209" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1593043052902">
@@ -257,10 +265,10 @@
       <screen x="0" y="0" width="1280" height="800" />
     </state>
     <state x="378" y="154" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1280.800@0.0.1280.800" timestamp="1593382008183" />
-    <state x="100" y="34" width="1080" height="766" key="DiffContextDialog" timestamp="1593536068048">
+    <state x="100" y="23" width="1080" height="709" key="DiffContextDialog" timestamp="1593599038718">
       <screen x="0" y="23" width="1280" height="709" />
     </state>
-    <state x="100" y="34" width="1080" height="766" key="DiffContextDialog/0.23.1280.709@0.23.1280.709" timestamp="1593536068048" />
+    <state x="100" y="23" width="1080" height="709" key="DiffContextDialog/0.23.1280.709@0.23.1280.709" timestamp="1593599038718" />
     <state x="294" y="185" key="EditFileWatcherDialog" timestamp="1593087647351">
       <screen x="0" y="0" width="1280" height="800" />
     </state>

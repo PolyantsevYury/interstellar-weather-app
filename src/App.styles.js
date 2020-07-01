@@ -42,6 +42,7 @@ export const AppWrapper = styled.div`
   background-position: ${({theme}) => theme.backgroundPosition};
   
   min-height: 100vh;
+  min-height: calc(var(--vh, 1vh) * 100);
   display: flex;
   flex-direction: column;
   align-items: center;
