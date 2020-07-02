@@ -27,7 +27,7 @@ export const MarsWeather = ({marsWeather, isMetric, marsLoading, setMetric, sele
                   <Unit isMetric={isMetric} setMetric={setMetric}/>
                 </div>
               </SectionTitle>
-              <MarsWeatherData sol={marsWeather[selectedSol]} isMetric={isMetric}/>
+              <MarsWeatherData sol={marsWeather[selectedSol]} isMetric={isMetric} selectedSol={selectedSol}/>
             </>
         )}
       </>

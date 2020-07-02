@@ -23,10 +23,18 @@ export const WeatherItem = styled.div`
     }
   }
   
+  .photo-wrapper {
+    height: 160px;
+    width: 160px;
+    border-radius: 8px;
+    border: 1px solid #1E1E1E;
+    overflow: hidden;
+    background: url(${props => props.PhotoBlur});
+    background-size: cover;
+  }
+  
   .photo {
     width: 160px;
-    border: 1px solid #1E1E1E;
-    border-radius: 8px;
   }
   
   .photo-description {

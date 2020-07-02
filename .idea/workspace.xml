@@ -16,10 +16,20 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1de50740-1616-4768-97b6-f7c2e1f52600" name="Default Changelist" comment="Fix background img on mobile">
+    <list default="true" id="1de50740-1616-4768-97b6-f7c2e1f52600" name="Default Changelist" comment="Change sizing (add viewport units) for correct sizing on mobile">
+      <change afterPath="$PROJECT_DIR$/src/img/icc_0.PNG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/img/icc_1.PNG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/img/icc_2.PNG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/img/icc_3.PNG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/img/icc_4.PNG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/img/icc_5.PNG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/img/icc_blur.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.styles.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.styles.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Weather/EarthWeather/EarthWeather.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Weather/EarthWeather/EarthWeather.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Weather/MarsWeather/MarsWeather.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Weather/MarsWeather/MarsWeather.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Weather/MarsWeather/MarsWeatherData.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Weather/MarsWeather/MarsWeatherData.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Weather/WeatherData.styles.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Weather/WeatherData.styles.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/img/context_camera.PNG" beforeDir="false" afterPath="$PROJECT_DIR$/src/img/icc_6.PNG" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -202,7 +212,14 @@
       <option name="project" value="LOCAL" />
       <updated>1593597321617</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="Change sizing (add viewport units) for correct sizing on mobile">
+      <created>1593623581262</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1593623581262</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -250,7 +267,8 @@
     <MESSAGE value="Add preloader (spiner)" />
     <MESSAGE value="Try to fix background-attachment bug on mobile" />
     <MESSAGE value="Fix background img on mobile" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fix background img on mobile" />
+    <MESSAGE value="Change sizing (add viewport units) for correct sizing on mobile" />
+    <option name="LAST_COMMIT_MESSAGE" value="Change sizing (add viewport units) for correct sizing on mobile" />
   </component>
   <component name="WindowStateProjectService">
     <state x="370" y="209" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1593043052902">
@@ -281,10 +299,10 @@
       <screen x="0" y="0" width="1280" height="800" />
     </state>
     <state x="149" y="23" key="SettingsEditor/0.0.1280.800@0.0.1280.800" timestamp="1593419826472" />
-    <state x="305" y="124" width="670" height="676" key="search.everywhere.popup" timestamp="1593259591486">
+    <state x="305" y="124" width="670" height="676" key="search.everywhere.popup" timestamp="1593624858563">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state x="305" y="124" width="670" height="676" key="search.everywhere.popup/0.0.1280.800@0.0.1280.800" timestamp="1593259591486" />
-    <state x="305" y="124" width="670" height="676" key="search.everywhere.popup/0.23.1280.709@0.23.1280.709" timestamp="1593087806611" />
+    <state x="305" y="124" width="670" height="676" key="search.everywhere.popup/0.0.1280.800@0.0.1280.800" timestamp="1593624858563" />
+    <state x="305" y="124" width="670" height="676" key="search.everywhere.popup/0.23.1280.709@0.23.1280.709" timestamp="1593624836678" />
   </component>
 </project>

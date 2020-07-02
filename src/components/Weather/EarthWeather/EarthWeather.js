@@ -40,7 +40,10 @@ export const EarthWeather = ({earthWeather, setEarthWeather, city, setCity}) => 
       </WeatherTitle>
       <SearchContainer>
         <Search
-            onSearch={city => fetchEarthData(city)}
+            onSearch={(city, e) => {
+              e.target.blur();
+              fetchEarthData(city)
+            }}
             loading={earthLoading}
             style={{maxWidth: 400, borderRadius: 10}}
             size="large"
