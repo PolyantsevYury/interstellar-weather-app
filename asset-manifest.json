@@ -1,25 +1,32 @@
 {
   "files": {
-    "main.js": "/interstellar-weather-app/static/js/main.94db0e45.chunk.js",
-    "main.js.map": "/interstellar-weather-app/static/js/main.94db0e45.chunk.js.map",
+    "main.js": "/interstellar-weather-app/static/js/main.344587f7.chunk.js",
+    "main.js.map": "/interstellar-weather-app/static/js/main.344587f7.chunk.js.map",
     "runtime-main.js": "/interstellar-weather-app/static/js/runtime-main.15f8552a.js",
     "runtime-main.js.map": "/interstellar-weather-app/static/js/runtime-main.15f8552a.js.map",
     "static/css/2.3cb76441.chunk.css": "/interstellar-weather-app/static/css/2.3cb76441.chunk.css",
-    "static/js/2.2ef4ec01.chunk.js": "/interstellar-weather-app/static/js/2.2ef4ec01.chunk.js",
-    "static/js/2.2ef4ec01.chunk.js.map": "/interstellar-weather-app/static/js/2.2ef4ec01.chunk.js.map",
+    "static/js/2.d68b5aa3.chunk.js": "/interstellar-weather-app/static/js/2.d68b5aa3.chunk.js",
+    "static/js/2.d68b5aa3.chunk.js.map": "/interstellar-weather-app/static/js/2.d68b5aa3.chunk.js.map",
     "index.html": "/interstellar-weather-app/index.html",
-    "precache-manifest.7c77f808201eab4b41197a85cb7d9244.js": "/interstellar-weather-app/precache-manifest.7c77f808201eab4b41197a85cb7d9244.js",
+    "precache-manifest.bfdb6b40213584031da526242c1d979d.js": "/interstellar-weather-app/precache-manifest.bfdb6b40213584031da526242c1d979d.js",
     "service-worker.js": "/interstellar-weather-app/service-worker.js",
     "static/css/2.3cb76441.chunk.css.map": "/interstellar-weather-app/static/css/2.3cb76441.chunk.css.map",
-    "static/js/2.2ef4ec01.chunk.js.LICENSE.txt": "/interstellar-weather-app/static/js/2.2ef4ec01.chunk.js.LICENSE.txt",
-    "static/media/context_camera.PNG": "/interstellar-weather-app/static/media/context_camera.ad456a3a.PNG",
+    "static/js/2.d68b5aa3.chunk.js.LICENSE.txt": "/interstellar-weather-app/static/js/2.d68b5aa3.chunk.js.LICENSE.txt",
     "static/media/earth.jpg": "/interstellar-weather-app/static/media/earth.464a0c64.jpg",
+    "static/media/icc_0.png": "/interstellar-weather-app/static/media/icc_0.0e42b314.png",
+    "static/media/icc_1.png": "/interstellar-weather-app/static/media/icc_1.60bc044e.png",
+    "static/media/icc_2.png": "/interstellar-weather-app/static/media/icc_2.0beec75a.png",
+    "static/media/icc_3.png": "/interstellar-weather-app/static/media/icc_3.8f7dff44.png",
+    "static/media/icc_4.png": "/interstellar-weather-app/static/media/icc_4.f5fbeb67.png",
+    "static/media/icc_5.png": "/interstellar-weather-app/static/media/icc_5.b26c359f.png",
+    "static/media/icc_6.png": "/interstellar-weather-app/static/media/icc_6.07c13bb6.png",
+    "static/media/icc_blur.png": "/interstellar-weather-app/static/media/icc_blur.9124957d.png",
     "static/media/mars.jpg": "/interstellar-weather-app/static/media/mars.0d4cbc41.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.15f8552a.js",
     "static/css/2.3cb76441.chunk.css",
-    "static/js/2.2ef4ec01.chunk.js",
-    "static/js/main.94db0e45.chunk.js"
+    "static/js/2.d68b5aa3.chunk.js",
+    "static/js/main.344587f7.chunk.js"
   ]
 }
