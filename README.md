@@ -3,6 +3,7 @@
  Demo: https://polyantsevyury.github.io/interstellar-weather-app/
  
  Для получения данных о погоде на марсе использовал публичное API от NASA - https://api.nasa.gov/
+ 
  Для погоды в текущем регионе - https://home.openweathermap.org/
  
  Stack:
