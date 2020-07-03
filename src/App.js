@@ -13,7 +13,7 @@ import {MarsWeather} from "./components/Weather/MarsWeather/MarsWeather";
 import {EarthWeather} from "./components/Weather/EarthWeather/EarthWeather";
 
 const App = () => {
-  const [planet, setPlanet] = useState('Mars');
+  const [planet, setPlanet] = useState(localStorage.getItem('planet') || 'Mars');
 
   // Earth
   const [earthWeather, setEarthWeather] = useState(null);
@@ -45,6 +45,10 @@ const App = () => {
     setSelectedSol(marsWeather.length - 1);
     setMarsLoading(false);
   };
+
+  useEffect( () => {
+    localStorage.setItem('planet', planet)
+  }, [planet]);
 
   useEffect(() => {
     fetchMarsData();

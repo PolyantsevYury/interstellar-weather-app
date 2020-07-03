@@ -16,20 +16,10 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1de50740-1616-4768-97b6-f7c2e1f52600" name="Default Changelist" comment="Change sizing (add viewport units) for correct sizing on mobile">
-      <change afterPath="$PROJECT_DIR$/src/img/icc_0.PNG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/img/icc_1.PNG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/img/icc_2.PNG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/img/icc_3.PNG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/img/icc_4.PNG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/img/icc_5.PNG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/img/icc_blur.png" afterDir="false" />
+    <list default="true" id="1de50740-1616-4768-97b6-f7c2e1f52600" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Weather/EarthWeather/EarthWeather.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Weather/EarthWeather/EarthWeather.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Weather/MarsWeather/MarsWeather.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Weather/MarsWeather/MarsWeather.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Weather/MarsWeather/MarsWeatherData.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Weather/MarsWeather/MarsWeatherData.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Weather/WeatherData.styles.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Weather/WeatherData.styles.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/img/context_camera.PNG" beforeDir="false" afterPath="$PROJECT_DIR$/src/img/icc_6.PNG" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/TogglePlanet/TogglePlanet.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/TogglePlanet/TogglePlanet.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -99,6 +89,7 @@
       <workItem from="1592946978782" duration="693000" />
       <workItem from="1593049484251" duration="156753000" />
       <workItem from="1593436107077" duration="6783000" />
+      <workItem from="1593756604057" duration="2263000" />
     </task>
     <task id="LOCAL-00001" summary="Basic structure of layout">
       <created>1593028442226</created>
@@ -219,11 +210,18 @@
       <option name="project" value="LOCAL" />
       <updated>1593623581262</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="Add ICC photos from Mars (not dynamically loaded from NASA yet)&#10;Change photo depends on sol&#10;Add blur when photo is loading">
+      <created>1593718917142</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1593718917142</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
+    <option name="version" value="2" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -268,7 +266,8 @@
     <MESSAGE value="Try to fix background-attachment bug on mobile" />
     <MESSAGE value="Fix background img on mobile" />
     <MESSAGE value="Change sizing (add viewport units) for correct sizing on mobile" />
-    <option name="LAST_COMMIT_MESSAGE" value="Change sizing (add viewport units) for correct sizing on mobile" />
+    <MESSAGE value="Add ICC photos from Mars (not dynamically loaded from NASA yet)&#10;Change photo depends on sol&#10;Add blur when photo is loading" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add ICC photos from Mars (not dynamically loaded from NASA yet)&#10;Change photo depends on sol&#10;Add blur when photo is loading" />
   </component>
   <component name="WindowStateProjectService">
     <state x="370" y="209" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1593043052902">
